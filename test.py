@@ -35,7 +35,7 @@ faces = []
 image_dir = r'C:\Users\admin\.cache\kagglehub\datasets\jessicali9530\celeba-dataset\versions\2\img_align_celeba\img_align_celeba'
 images = os.listdir(image_dir)
 
-for img_name in tqdm(images[1003:1009]):  # images — это список имён файлов
+for img_name in images[30003:30009]:  # images — это список имён файлов
     img_path = os.path.join(image_dir, img_name)
     img = Image.open(img_path).convert('RGB')
     tensor_img = transform(img)
