@@ -1,2 +1,4 @@
 .venv
 autoencoder_weights.pth
+resnet18.pth
+.env
