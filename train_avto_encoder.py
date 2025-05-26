@@ -118,7 +118,7 @@ def train():
 
 if __name__ == '__main__':
     train()
-torch.save(autoencoder.state_dict(), "autoencoder_weights.pth")
+torch.save(autoencoder.state_dict(), "model/autoencoder_weights.pth")
 
 
 # === График потерь ===

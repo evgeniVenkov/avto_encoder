@@ -44,7 +44,7 @@ for img_name in images[30003:30009]:  # images — это список имён 
 faces = torch.stack(faces).to(device)
 
 autoencoder = my_model()
-autoencoder.load_state_dict(torch.load("autoencoder_weights.pth", map_location=device))
+autoencoder.load_state_dict(torch.load("model/autoencoder_weights.pth", map_location=device))
 autoencoder.to(device)
 autoencoder.eval()
 out,latent,_ = autoencoder(faces)

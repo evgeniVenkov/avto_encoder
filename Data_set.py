@@ -21,7 +21,7 @@ class CelebADataset(Dataset):
         # Убрать строки с пропущенными значениями, если они остались
         self.data = self.data.dropna(subset=self.attrs)
         self.data[self.attrs] = self.data[self.attrs].astype(int)
-        self.data = self.data.iloc[:len(self.data) // 2].reset_index(drop=True)
+        # self.data = self.data.iloc[:len(self.data) // 2].reset_index(drop=True)
 
 
     def __len__(self):

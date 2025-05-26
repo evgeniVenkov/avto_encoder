@@ -29,12 +29,12 @@ attrs_ru = ['Привлекательный', 'Лысый', 'Чёрные вол
             'Бакенбарды', 'Прямые волосы', 'Волнистые волосы', 'Молодой']
 
 # Загружаем модель
-model = models.resnet18()
+model = models.resnet50()
 model.fc = torch.nn.Linear(model.fc.in_features, len(selected_attrs))
-model.load_state_dict(torch.load("resnet18.pth", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("model/resnet50.pth", map_location=torch.device('cpu')))
 model.eval()
 
-img, label = DS[6]
+img, label = DS[120000]
 img_tensor = img.unsqueeze(0)
 
 # Предсказание
