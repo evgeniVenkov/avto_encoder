@@ -35,7 +35,7 @@ selected_attrs = [
 # ==========================
 EPOHS = 1
 BATCH_SIZE = 64
-LEARNING_RATE = 0.01
+LEARNING_RATE = 0.001
 NEW_MODEL = True
 STEP_SCHEDULER = 1
 GAMMA = 0.1
@@ -80,7 +80,6 @@ for epoch in range(EPOHS):
     loop = tqdm.tqdm(train_loader)
     count_step = 0
     min_loss = 1000
-    schelk = 0
 
     for images, labels in loop:
         images, labels = images.to(device), labels.to(device)
@@ -95,8 +94,7 @@ for epoch in range(EPOHS):
             count_step = 0
         else:
             count_step += 1
-            if count_step >= 200:
-                schelk += 1
+            if count_step >= 400:
                 scheduler.step()
                 count_step = 0
 

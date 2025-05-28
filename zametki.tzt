@@ -16,19 +16,19 @@ Young: 0.9138
 ------------------------------------------------------------
 RESNET_18 + scheduler
 
-Attractive: 0.8018
-Bald: 0.9827
-Black_Hair: 0.8865
-Blond_Hair: 0.9460
-Brown_Hair: 0.8589
-Chubby: 0.9439
-Gray_Hair: 0.9730
-Mustache: 0.9576
-Receding_Hairline: 0.9285
-Sideburns: 0.9604
-Straight_Hair: 0.7952
-Wavy_Hair: 0.8057
-Young: 0.8610
+Attractive: 0.8283
+Bald: 0.9903
+Black_Hair: 0.9123
+Blond_Hair: 0.9575
+Brown_Hair: 0.8789
+Chubby: 0.9583
+Gray_Hair: 0.9817
+Mustache: 0.9677
+Receding_Hairline: 0.9447
+Sideburns: 0.9771
+Straight_Hair: 0.8529
+Wavy_Hair: 0.8674
+Young: 0.9013
 ------------------------------------------------------------
 RESNET_50
 
